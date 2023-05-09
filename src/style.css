@@ -1,0 +1,28 @@
+#chat-input {
+    width: 20em;
+}
+
+#chat-history {
+    border: solid black 2px;
+    width: 50%;
+}
+
+.user-message {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.reply-message {
+    font-family: monospace;
+    text-align: right;
+    color: blue;
+}
+
+.small-margin-all {
+    margin: 1em;
+}
+
+.small-padding-horizontal {
+    padding-left: 1em;
+    padding-right: 1em;
+}
