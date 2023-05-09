@@ -12,12 +12,14 @@
 <body>
     <h1>Chat OPT!!</h1>
     <form id="chat-form" class="small-margin-all">
-        <input id="chat-input" type="text" name="message" placeholder="message goes here" required>
-        <button type="submit">send it</button>
+        <input id="name-input" type="text" name="name" placeholder="Your name goes here">
+        <input id="chat-input" type="text" name="message" placeholder="Message goes here" required>
+        <button type="submit">Send it</button>
     </form>
-    <div class="box" id="chat-history">
-        <h2 class="small-margin-all">Chat history</h2>
-        <div id="chat-log"></div>
+    <div id="chat-history">
+        <div id="chat-log" class="small-padding-vertical">
+            <h2 class="small-margin-all">Chat history:</h2>
+        </div>
     </div>
 </body>
 </html>

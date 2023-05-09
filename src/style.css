@@ -1,21 +1,55 @@
+:root {
+    --user-terminal-text-color: #22ca00;
+    --reply-terminal-text-color: #1db000;
+    --terminal-background-color: #001100;
+}
+
+body {
+    font-family: monospace;
+    background-color: black;
+    color: gainsboro;
+}
+
+p {
+    font-size: large;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+}
+
 #chat-input {
     width: 20em;
 }
 
 #chat-history {
-    border: solid black 2px;
-    width: 50%;
+    background-color: #001100;
+    width: 80%;
+    height: 70vh;
+    overflow-y: scroll;
+    border: solid gainsboro 2px;
+}
+
+#chat-log {
+    background-color: var(--terminal-background-color);
 }
 
 .user-message {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
+    color: var(--user-terminal-text-color);
 }
 
 .reply-message {
     font-family: monospace;
     text-align: right;
-    color: blue;
+    color: var(--reply-terminal-text-color);
 }
 
 .small-margin-all {
@@ -25,4 +59,9 @@
 .small-padding-horizontal {
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.small-padding-vertical {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
